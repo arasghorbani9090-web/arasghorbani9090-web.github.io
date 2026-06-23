@@ -41,4 +41,4 @@ arasghorbani9090-web/
 
 ## 📬 Contact
 
-📧 arasghorbani9090@gmail.com · 🔗 [LinkedIn](https://www.linkedin.com/in/arasghorbani)
+📧 arasghorbani9090@gmail.com · 🔗 [LinkedIn](https://www.linkedin.com/in/aras-ghorbani-ab1a7b62)
