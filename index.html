@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aras Ghorbani — Founder of Souq</title>
+  <meta name="description" content="Founder of Souq — building the next-generation map-based marketplace platform in the Gulf. Product engineer across mobile, marketplace systems, and cloud architecture." />
+  <meta property="og:title" content="Aras Ghorbani — Founder of Souq" />
+  <meta property="og:description" content="Building the next-generation map-based marketplace platform in the Gulf." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root{
+      --gulf-deep:#0B1E27; --gulf:#10303B; --pearl:#F4ECDD; --sand:#E7C9A0;
+      --sand-dim:#A9967B; --glow:#E7C9A0; --accent:#3FCF8E; --line:rgba(231,201,160,.16);
+      --maxw:1080px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      background:radial-gradient(1200px 600px at 70% -10%, #14404e 0%, var(--gulf-deep) 55%) no-repeat, var(--gulf-deep);
+      color:var(--pearl);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      line-height:1.6; -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+    a{color:inherit;text-decoration:none}
+    /* Nav */
+    nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(10px);
+      background:rgba(11,30,39,.72);border-bottom:1px solid var(--line)}
+    nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{font-weight:800;letter-spacing:.3px;display:flex;align-items:center;gap:10px}
+    .brand .dot{width:10px;height:10px;border-radius:50%;background:var(--sand);box-shadow:0 0 14px var(--sand)}
+    .nav-links{display:flex;gap:26px;font-size:14px;color:var(--sand)}
+    .nav-links a:hover{color:var(--pearl)}
+    @media(max-width:680px){.nav-links{display:none}}
+    /* Hero */
+    .hero{padding:96px 0 72px;text-align:center}
+    .eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;
+      color:var(--gulf-deep);background:var(--sand);padding:6px 14px;border-radius:99px;font-weight:800}
+    h1{font-size:clamp(34px,6vw,64px);line-height:1.08;margin:22px 0 10px;letter-spacing:-1px}
+    .grad{background:linear-gradient(90deg,var(--sand),#fff 60%,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lede{font-size:clamp(17px,2.4vw,22px);color:var(--pearl);max-width:720px;margin:0 auto;opacity:.92}
+    .sub{color:var(--sand-dim);margin-top:14px;font-size:16px}
+    .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+    .btn{padding:14px 26px;border-radius:14px;font-weight:800;font-size:15px;border:1px solid transparent;transition:transform .15s ease,background .2s}
+    .btn:active{transform:scale(.97)}
+    .btn-primary{background:var(--sand);color:var(--gulf-deep)}
+    .btn-primary:hover{background:#f2dcb8}
+    .btn-ghost{border-color:var(--line);color:var(--pearl)}
+    .btn-ghost:hover{border-color:var(--sand)}
+    /* Sections */
+    section{padding:64px 0}
+    .kicker{color:var(--accent);font-weight:800;letter-spacing:1.2px;text-transform:uppercase;font-size:13px}
+    h2{font-size:clamp(26px,4vw,38px);margin:8px 0 8px;letter-spacing:-.5px}
+    .muted{color:var(--sand-dim);max-width:620px}
+    /* Cards grid */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:36px}
+    .card{background:linear-gradient(180deg,var(--gulf),rgba(16,48,59,.5));border:1px solid var(--line);
+      border-radius:18px;padding:24px;transition:transform .18s ease,border-color .2s}
+    .card:hover{transform:translateY(-4px);border-color:var(--sand)}
+    .card h3{font-size:19px;margin-bottom:6px;display:flex;align-items:center;gap:10px}
+    .card p{color:var(--sand-dim);font-size:14.5px}
+    .tag{display:inline-block;margin:14px 6px 0 0;font-size:12px;color:var(--sand);
+      border:1px solid var(--line);border-radius:99px;padding:4px 10px}
+    .status{font-size:12px;font-weight:800;padding:3px 10px;border-radius:99px;margin-left:auto}
+    .s-live{background:rgba(63,207,142,.16);color:var(--accent)}
+    .s-rd{background:rgba(242,183,5,.16);color:#F2B705}
+    .s-res{background:rgba(124,92,255,.18);color:#b3a0ff}
+    .ic{width:22px;height:22px;stroke:var(--sand);fill:none;stroke-width:1.8}
+    /* Value props */
+    .props{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:32px}
+    .prop{padding:20px;border-left:2px solid var(--sand);background:rgba(16,48,59,.4);border-radius:0 12px 12px 0}
+    .prop strong{display:block;font-size:16px;margin-bottom:4px}
+    .prop span{color:var(--sand-dim);font-size:14px}
+    /* Stack */
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+    .chip{background:var(--gulf);border:1px solid var(--line);border-radius:10px;padding:9px 14px;font-size:14px;color:var(--pearl)}
+    /* Contact */
+    .contact{text-align:center;background:linear-gradient(180deg,rgba(16,48,59,.6),transparent);border-top:1px solid var(--line);border-radius:24px 24px 0 0;margin-top:40px}
+    footer{padding:40px 0;text-align:center;color:var(--sand-dim);font-size:13px;border-top:1px solid var(--line)}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap">
+      <div class="brand"><span class="dot"></span> Aras Ghorbani</div>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#approach">Approach</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Founder of Souq</span>
+      <h1>Building the next-generation<br><span class="grad">map-based marketplace</span><br>for the Gulf.</h1>
+      <p class="lede">I'm a product engineer who ships real systems end-to-end — from PostGIS and Rust cores to the pixel-level polish of a mobile storefront.</p>
+      <p class="sub">Mobile · Marketplace systems · Cloud architecture · Geospatial product</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="mailto:arasghorbani9090@gmail.com">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <span class="kicker">Selected work</span>
+      <h2>Real products, shipping.</h2>
+      <p class="muted">Working systems, not slide decks. Source is private; architecture and roadmaps are open.</p>
+      <div class="grid">
+        <a class="card" href="https://github.com/arasghorbani9090-web/souq">
+          <h3>
+            <svg class="ic" viewBox="0 0 24 24"><path d="M3 7l6-3 6 3 6-3v13l-6 3-6-3-6 3zM9 4v13M15 7v13"/></svg>
+            Souq <span class="status s-live">Production MVP</span>
+          </h3>
+          <p>Map-first marketplace for the Gulf — storefronts, geolocation product search, and WhatsApp-native contact, rendered as live shop markers on an interactive map.</p>
+          <div>
+            <span class="tag">React Native</span><span class="tag">Supabase</span>
+            <span class="tag">PostGIS</span><span class="tag">TypeScript</span>
+          </div>
+        </a>
+        <a class="card" href="https://github.com/arasghorbani9090-web/historical-traffic-routing">
+          <h3>
+            <svg class="ic" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8 17C14 15 10 9 16 7"/></svg>
+            Traffic Routing <span class="status s-rd">Active R&amp;D</span>
+          </h3>
+          <p>Time-aware routing &amp; simulation over real road networks. Replay historical conditions through an OSRM + OpenStreetMap engine to answer questions a live router can't.</p>
+          <div>
+            <span class="tag">FastAPI</span><span class="tag">Python</span>
+            <span class="tag">OSRM</span><span class="tag">OpenStreetMap</span>
+          </div>
+        </a>
+        <a class="card" href="https://github.com/arasghorbani9090-web/hft-research-platform">
+          <h3>
+            <svg class="ic" viewBox="0 0 24 24"><path d="M3 17l5-6 4 3 5-7 4 4M3 21h18"/></svg>
+            HFT Research <span class="status s-res">Research</span>
+          </h3>
+          <p>Evolutionary strategy generation &amp; market-microstructure simulation. A Rust execution core drives the hot path; a Python research layer evolves and analyzes strategies.</p>
+          <div>
+            <span class="tag">Rust</span><span class="tag">Python</span>
+            <span class="tag">Bybit</span><span class="tag">Simulation</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach">
+    <div class="wrap">
+      <span class="kicker">How I work</span>
+      <h2>Founder mindset, engineer's hands.</h2>
+      <div class="props">
+        <div class="prop"><strong>Ship to learn</strong><span>Scope to the smallest thing that proves the market — then harden it for real users.</span></div>
+        <div class="prop"><strong>Full-stack ownership</strong><span>DB schema → API → mobile UI → signed release. I own the whole path.</span></div>
+        <div class="prop"><strong>Geospatial by default</strong><span>Clustering, radius search, PostGIS, native map rendering at scale.</span></div>
+        <div class="prop"><strong>Pragmatic infrastructure</strong><span>Managed services where they win; custom systems where they matter.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack">
+    <div class="wrap">
+      <span class="kicker">Toolkit</span>
+      <h2>Tech I build with.</h2>
+      <div class="chips">
+        <span class="chip">TypeScript</span><span class="chip">React Native</span><span class="chip">Expo</span>
+        <span class="chip">Python</span><span class="chip">FastAPI</span><span class="chip">Rust</span>
+        <span class="chip">PostgreSQL</span><span class="chip">PostGIS</span><span class="chip">Supabase</span>
+        <span class="chip">MapLibre</span><span class="chip">OSRM</span><span class="chip">Docker</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <span class="kicker">Let's talk</span>
+      <h2>Open to the right partners.</h2>
+      <p class="muted" style="margin:0 auto">Investors, accelerators, technical co-founders, and engineers who like hard product problems — I'd love to connect.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="mailto:arasghorbani9090@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/arasghorbani">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/arasghorbani9090-web">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>© <span id="y"></span> Aras Ghorbani · Founder of Souq · Building in the Gulf.</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
